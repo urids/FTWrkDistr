@@ -10,7 +10,8 @@ int main(int argc,char** argv){
 		MPI_Get_processor_name(hostname, &len);
 		printf("Hello from task %d on %s!\n", taskid, hostname);
 		MPI_Finalize();
-return 0;
+
+		return 0;
 
 
 }
