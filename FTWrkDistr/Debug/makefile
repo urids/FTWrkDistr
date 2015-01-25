@@ -44,7 +44,7 @@ all: FTWrkDistr
 FTWrkDistr: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "FTWrkDistr" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/home/uriel/Dev/mpiDev/lib -o "FTWrkDistr" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
